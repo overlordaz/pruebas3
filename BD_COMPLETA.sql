@@ -16,8 +16,6 @@
 
 
 -- Volcando estructura de base de datos para laravel
-CREATE DATABASE IF NOT EXISTS `laravel` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `laravel`;
 
 -- Volcando estructura para procedimiento laravel.Actualizar_lote
 DELIMITER //
