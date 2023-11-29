@@ -18,6 +18,15 @@ public class CameraPointerManager : MonoBehaviour
     /// <summary>
     /// Update is called once per frame.
     /// </summary>
+    /// 
+    private void Start()
+    {
+        GazeManager.Instance.OnGazeSelection += GazeSelection;
+    }
+    private void GazeSelection()
+    {
+        _gazedAtObject?.SendMessage("OnPointerClick",null,SendMessageOptions.DontRequireReceiver);
+    }
     public void Update()
     {
         // Casts ray towards camera's forward direction, to detect if a GameObject is being gazed
