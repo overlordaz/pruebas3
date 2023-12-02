@@ -38,7 +38,7 @@ public class CameraPointerManager : MonoBehaviour
     }
     private void GazeSelection()
     {
-        _gazedAtObject?.SendMessage("OnPointerClick",null,SendMessageOptions.DontRequireReceiver);
+        _gazedAtObject?.SendMessage("OnPointerClickXR",null,SendMessageOptions.DontRequireReceiver);
     }
     public void Update()
     {
